@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/build/test.elf",
+            "name": "ST-Link Cortex-M4 Debug",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "device": "STM32F103C8T6",
+            "configFiles": [
+                "interface/stlink-v2.cfg",
+                "target/stm32f1x.cfg"
+            ],
+            "svdFile": "${workspaceRoot}/Script/STM32F103.svd",
+            "runToEntryPoint": "main",
+            "searchDir": [],
+        }, 
+    ],
+    "version": "2.0.0",
+}
